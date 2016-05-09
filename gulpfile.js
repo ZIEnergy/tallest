@@ -50,7 +50,7 @@ gulp.task('scripts', function () {
 });
 
 gulp.task('styles', function () {
-  gulp.src('./src/styles/*.{css,less})
+  gulp.src('./src/styles/*.{css,less}')
     .pipe(concat('style.less'))
     .pipe(less())
     .pipe(autoprefixer({

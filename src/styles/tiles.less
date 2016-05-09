@@ -1,0 +1,48 @@
+.tiles-container {
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+.tile {
+  perspective: 1000;
+  width: 16%;
+  height: 150px;
+  &__flipper {
+    width: 100%;
+    height: 100%;
+    transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+  } 
+  &:hover .tile__flipper {
+    transform: rotateY(180deg);
+  }
+  &.tile--active .tile__flipper {
+    transform: rotateY(180deg);
+  }
+  &__front, &__back {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+  }
+  &__front {
+    z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+    border: 1px solid #ccc;
+  }
+  &__back {
+    transform: rotateY(180deg);
+    border: 1px solid #ccc;
+  }
+}

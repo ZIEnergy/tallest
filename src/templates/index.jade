@@ -4,9 +4,37 @@ html(lang="ru")
     meta(charset="UTF-8")
     meta(http-equiv="X-UA-Compatible", content="IE=Edge")
     title Title
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Roboto:400,100,700' type='text/css')
     link(rel='stylesheet', href='css/style.css')
+    script(type="text/javascript", src="js/jquery.min.js")
     script(type="text/javascript", src="js/script.js")
     meta(name="viewport", content="width=device-width, initial-scale=1, user-scalable=0")
     meta(name="format-detection", content="telephone=no")
 
   body
+    .tiles-container
+      .tile.tile--active(ontouchstart="this.classList.toggle('hover');")
+        .tile__flipper
+          .tile__front 1
+          .tile__back active
+      .tile(ontouchstart="this.classList.toggle('hover');")
+        .tile__flipper
+          .tile__front 2
+          .tile__back active
+      .tile(ontouchstart="this.classList.toggle('hover');", data-tile="3")
+        .tile__flipper
+          .tile__front 3
+          .tile__back active
+      .tile(ontouchstart="this.classList.toggle('hover');")
+        .tile__flipper
+          .tile__front 4
+          .tile__back active
+      .tile(ontouchstart="this.classList.toggle('hover');")
+        .tile__flipper
+          .tile__front 5
+          .tile__back active
+      .tile(ontouchstart="this.classList.toggle('hover');")
+        .tile__flipper
+          .tile__front 6
+          .tile__back active
+        
