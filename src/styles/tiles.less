@@ -43,9 +43,49 @@
 	/* for firefox 31 */
 	transform: rotateY(0deg);
     border: 1px solid #ccc;
+    background: #fff;
   }
   &__back {
     transform: rotateY(180deg);
     border: 1px solid #ccc;
   }
+  .tile__back--work {
+    overflow: hidden;
+    align-items: flex-start;
+  }
+  .tile__work-picture {
+    width: 100%;
+    height: auto;
+  }
+  &__back--hero {
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    text-align: center;
+    padding: 20px 0;
+  }
+  &__hero-specialization-top {
+    font-size: 30px;
+    text-align: center;
+    color: #42A5F5;
+    font-weight: 100;
+  }
+  &__hero-specialization-bottom {
+    font-size: 22px;
+    text-align: center;
+    color: #42A5F5;
+    font-weight: 100;
+  }
+  &__hero-age {
+    font-weight: 100;
+  }
+  &__hero-city {
+    font-weight: 700;
+  }
+}
+
+.hero {
+  height: 90%;
+  width: auto;
 }

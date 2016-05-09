@@ -13,51 +13,34 @@ html(lang="ru")
 
   body
     .tiles-container
-      .tile.tile--active(ontouchstart="this.classList.toggle('hover');")
+      .tile.tile--active
         .tile__flipper
-          .tile__front 1
-          .tile__back active
-      .tile(ontouchstart="this.classList.toggle('hover');")
+          .tile__front photo
+          .tile__back
+            img(src="img/me.svg", alt="").hero
+      .tile.tile--active
         .tile__flipper
           .tile__front 2
-          .tile__back active
-      .tile(ontouchstart="this.classList.toggle('hover');", data-tile="3")
+          .tile__back.tile__back--hero
+            span.tile__hero-specialization 
+              .tile__hero-specialization-top Front-end
+              .tile__hero-specialization-bottom developer
+            span.tile__hero-age 26 years
+            span.tile__hero-city Minsk
+      .tile
         .tile__flipper
           .tile__front 3
-          .tile__back active
-      .tile(ontouchstart="this.classList.toggle('hover');")
+          a(href="#").tile__back.tile__back--work
+            img(src="img/works_topnomer.png", alt="").tile__work-picture
+      .tile
         .tile__flipper
           .tile__front 4
           .tile__back active
-      .tile(ontouchstart="this.classList.toggle('hover');")
+      .tile
         .tile__flipper
           .tile__front 5
           .tile__back active
-      .tile(ontouchstart="this.classList.toggle('hover');")
-        .tile__flipper
-          .tile__front 6
-          .tile__back active
-      .tile(ontouchstart="this.classList.toggle('hover');")
-        .tile__flipper
-          .tile__front 2
-          .tile__back active
-      .tile#tile(ontouchstart="this.classList.toggle('hover');")
-        .tile__flipper
-          .tile__front 3
-          .tile__back active
-      .tile(ontouchstart="this.classList.toggle('hover');")
-        .tile__flipper
-          .tile__front 4
-          .tile__back active
-      .tile(ontouchstart="this.classList.toggle('hover');")
-        .tile__flipper
-          .tile__front 5
-          .tile__back active
-      .tile(ontouchstart="this.classList.toggle('hover');")
-        .tile__flipper
-          .tile__front 6
-          .tile__back active
-      .tile(ontouchstart="this.classList.toggle('hover');")
+      .tile
         .tile__flipper
           .tile__front 6
           .tile__back active
