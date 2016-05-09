@@ -40,18 +40,26 @@
   }
   &__front {
     z-index: 2;
-	/* for firefox 31 */
 	transform: rotateY(0deg);
-    border: 1px solid #ccc;
     background: #fff;
+    &--work {
+      font-size: 18px;
+      line-height: 20px;
+      text-align: center;
+      padding: 0 10px;
+    }
   }
   &__back {
     transform: rotateY(180deg);
-    border: 1px solid #ccc;
-  }
-  .tile__back--work {
-    overflow: hidden;
-    align-items: flex-start;
+    background: #fff;
+    &--work {
+      overflow: hidden;
+      align-items: flex-start;
+    }
+    &--skills {
+      font-size: 14px;
+      text-align: center;
+    }
   }
   .tile__work-picture {
     width: 100%;
@@ -81,11 +89,45 @@
     font-weight: 100;
   }
   &__hero-city {
-    font-weight: 700;
+    font-weight: 400;
+  }
+  &__back--contacts {
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    padding: 30px 0;
   }
 }
 
 .hero {
   height: 90%;
   width: auto;
+}
+
+.bender {
+  height: 100%;
+  width: auto;
+}
+
+.link-email {
+  font-size: 14px;
+  color: #000;
+  text-decoration: none;
+}
+
+.link-phone {
+  font-size: 14px;
+  color: #000;
+  text-decoration: none;
+}
+
+.link-vk {
+  font-size: 14px;
+  color: #000;
+  text-decoration: none;
+}
+
+.link-twitter {
+  font-size: 14px;
+  color: #000;
+  text-decoration: none;
 }

@@ -1,4 +1,5 @@
 html(lang="ru")
+  include mixins.jade
 
   head
     meta(charset="UTF-8")
@@ -15,12 +16,12 @@ html(lang="ru")
     .tiles-container
       .tile.tile--active
         .tile__flipper
-          .tile__front photo
+          .tile__front me
           .tile__back
             img(src="img/me.svg", alt="").hero
       .tile.tile--active
         .tile__flipper
-          .tile__front 2
+          .tile__front about
           .tile__back.tile__back--hero
             span.tile__hero-specialization 
               .tile__hero-specialization-top Front-end
@@ -29,18 +30,31 @@ html(lang="ru")
             span.tile__hero-city Minsk
       .tile
         .tile__flipper
-          .tile__front 3
-          a(href="#").tile__back.tile__back--work
-            img(src="img/works_topnomer.png", alt="").tile__work-picture
+          .tile__front skills
+          .tile__back.tile__back--skills HTML, CSS, jQuery, Jade, Less, Gulp, Git, BEM
+      +work_item('Topnomer', 'img/works-topnomer.png')
+      +work_item('Dinvio', 'img/works-dinvio.png')
+      +work_item('Vyatka region', 'img/works-vyatka.png')
+      +work_item('Gzhel Porcelain Factory', 'img/works-farfor.png')
+      +work_item('RAK', 'img/works-rak.png')
+      +work_item('The Virtual Museum of Architecture', 'img/works-vma.png')
+      +work_item('Russian Lawns', 'img/works-gazon.png')
+      +work_item('CallBackService', 'img/works-cbs.png')
+      +work_item('Irito', 'img/works-irito.png')
+      +work_item('LinkIntel', 'img/works-linkintel.png')
+      +work_item('BystroBeton', 'img/works-beton.png')
+      +work_item('SmallRider', 'img/works-smallrider.png')
+      +work_item('Adagio', 'img/works-adagio.png')
       .tile
         .tile__flipper
-          .tile__front 4
-          .tile__back active
-      .tile
+          .tile__front bender
+          .tile__back
+            img(src="img/bender.jpg", alt="").bender
+      .tile.tile--active
         .tile__flipper
-          .tile__front 5
-          .tile__back active
-      .tile
-        .tile__flipper
-          .tile__front 6
-          .tile__back active
+          .tile__front call me!
+          .tile__back.tile__back--contacts
+            a(href="mailto:tehzienergy@gmail.com").link-email tehzienergy@gmail.com
+            a(href="tel:+375(25)935-00-46").link-phone +375 (25) 935-00-46
+            a(href="https://new.vk.com/zienergy").link-vk VK
+            a(href="https://twitter.com/Zhmurik").link-twitter Twitter

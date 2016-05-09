@@ -13,4 +13,6 @@ $(document).ready(function() {
     $(".tile").eq(random).toggleClass('tile--active');
   }, 2500);
   
+//  $('.tile').addClass('tile--active');
+  
 });
