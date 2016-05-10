@@ -57,8 +57,22 @@
       align-items: flex-start;
     }
     &--skills {
-      font-size: 14px;
-      text-align: center;
+      padding: 20px 10px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-flow: row wrap;
+    }
+  }
+  &__skill-item {
+    font-size: 18px;
+    text-align: center;
+    display: block;
+    background: #2196F3;
+    padding: 3px 6px;
+    color: #fff;
+    &:nth-child(n+3) {
+      margin-top: 5px;
     }
   }
   .tile__work-picture {
@@ -140,6 +154,5 @@
   text-align: center;
   padding: 5px 10px;
   background: #fff;
-  border-radius: 8px 0 0 8px;
   cursor: pointer;
 }
