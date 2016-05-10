@@ -1,6 +1,5 @@
 .tiles-container {
   width: 80%;
-  margin: 20px auto;
   display: flex;
   justify-content: space-between;
   flex-flow: row wrap;
@@ -47,6 +46,7 @@
       line-height: 20px;
       text-align: center;
       padding: 0 10px;
+      background: #f2f2f2;
     }
   }
   &__back {
@@ -130,4 +130,16 @@
   font-size: 14px;
   color: #000;
   text-decoration: none;
+}
+
+.open-button {
+  position: fixed;
+  right: 0;
+  top: 20px;
+  font-size: 24px;
+  text-align: center;
+  padding: 5px 10px;
+  background: #fff;
+  border-radius: 8px 0 0 8px;
+  cursor: pointer;
 }
