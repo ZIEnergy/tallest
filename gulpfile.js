@@ -25,7 +25,7 @@ gulp.task('images', function() {
 
 gulp.task('templates', function () {
   var params = {};
-  gulp.src('./src/templates/*.jade')
+  gulp.src('./src/templates/pages/*.jade')
     .pipe(jade({
       locals: params,
       pretty: true
@@ -62,6 +62,7 @@ gulp.task('styles', function () {
 gulp.task('watch', function () {
     gulp.watch('./src/styles/*.{css,less}', ['styles']);
     gulp.watch('./src/templates/*.jade', ['templates']);
+    gulp.watch('./src/templates/**/*.jade', ['templates']);
     gulp.watch('./src/scripts/*.js', ['scripts']);
 });
 
