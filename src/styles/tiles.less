@@ -125,7 +125,9 @@
 .link-email {
   font-size: 14px;
   color: #000;
-  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .link-phone {
@@ -134,16 +136,30 @@
   text-decoration: none;
 }
 
+.socials {
+  display: flex;
+  justify-content: space-between;
+}
+
 .link-vk {
   font-size: 14px;
   color: #000;
   text-decoration: none;
+  background: url(../img/vk.svg) no-repeat center;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
 }
 
 .link-twitter {
   font-size: 14px;
   color: #000;
   text-decoration: none;
+  background: url(../img/twitter.svg) no-repeat center;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
 }
 
 .open-button {
@@ -155,4 +171,14 @@
   padding: 5px 10px;
   background: #fff;
   cursor: pointer;
+}
+
+.link-skype {
+  color: #12A5F4;
+  font-size: 14px;
+  text-decoration: none;
+  .transition;
+  &:hover {
+    opacity: .7;
+  }
 }

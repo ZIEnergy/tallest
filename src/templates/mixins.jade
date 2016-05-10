@@ -1,6 +1,6 @@
-mixin work_item(header, picture)
+mixin work_item(header, picture, link)
   .tile
     .tile__flipper
       .tile__front.tile__front--work #{header}
-      a(href="#").tile__back.tile__back--work
+      a(href=link).tile__back.tile__back--work
         img(src=picture, alt="").tile__work-picture

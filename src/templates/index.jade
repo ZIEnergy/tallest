@@ -43,25 +43,26 @@ html(lang="ru")
               span.tile__skill-item Gulp
               span.tile__skill-item BEM
               span.tile__skill-item Git
-        +work_item('Topnomer', 'img/works-topnomer.png')
-        +work_item('Dinvio', 'img/works-dinvio.png')
-        +work_item('Vyatka region', 'img/works-vyatka.png')
-        +work_item('Gzhel Porcelain Factory', 'img/works-farfor.png')
-        +work_item('RAK', 'img/works-rak.png')
-        +work_item('The Virtual Museum of Architecture', 'img/works-vma.png')
-        +work_item('Russian Lawns', 'img/works-gazon.png')
-        +work_item('CallBackService', 'img/works-cbs.png')
-        +work_item('Irito', 'img/works-irito.png')
-        +work_item('LinkIntel', 'img/works-linkintel.png')
-        +work_item('BystroBeton', 'img/works-beton.png')
-        +work_item('SmallRider', 'img/works-smallrider.png')
-        +work_item('Adagio', 'img/works-adagio.png')
-        +work_item('City78', 'img/works-city78.png')
+        +work_item('Topnomer', 'img/works-topnomer.png', 'pages/topnomer/desktop')
+        +work_item('Dinvio', 'img/works-dinvio.png', 'pages/dinvio')
+        +work_item('Vyatka region', 'img/works-vyatka.png', 'pages/vyatka')
+        +work_item('Gzhel Porcelain Factory', 'img/works-farfor.png', 'pages/farfor')
+        +work_item('RAK', 'img/works-rak.png', 'pages/rak')
+        +work_item('The Virtual Museum of Architecture', 'img/works-vma.png', 'pages/arch')
+        +work_item('Russian Lawns', 'img/works-gazon.png', 'pages/gazon')
+        +work_item('CallBackService', 'img/works-cbs.png', 'pages/cbs')
+        +work_item('Irito', 'img/works-irito.png', 'pages/irito')
+        +work_item('LinkIntel', 'img/works-linkintel.png', 'pages/linkintel')
+        +work_item('BystroBeton', 'img/works-beton.png', 'pages/beton')
+        +work_item('SmallRider', 'img/works-smallrider.png', 'pages/spacerace')
+        +work_item('Adagio', 'img/works-adagio.png', 'pages/adagio')
+        +work_item('City78', 'img/works-city78.png', 'pages/city78')
         .tile
           .tile__flipper
-            .tile__front call me!
+            .tile__front contacts
             .tile__back.tile__back--contacts
               a(href="mailto:tehzienergy@gmail.com").link-email tehzienergy@gmail.com
-              a(href="tel:+375(25)935-00-46").link-phone +375 (25) 935-00-46
-              a(href="https://vk.com/zienergy").link-vk VK
-              a(href="https://twitter.com/Zhmurik").link-twitter Twitter
+              a(href="#").link-skype skype: zienergy
+              .socials
+                a(href="https://vk.com/zienergy").link-vk
+                a(href="https://twitter.com/Zhmurik").link-twitter
