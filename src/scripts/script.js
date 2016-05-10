@@ -6,14 +6,14 @@ $(document).ready(function() {
     $('.tile').css('height', $('.tile').width());
   });
   
-  if ($(window).width() > 640) {
+  if ($(window).width() > 768) {
     var flip = function() {
       var random = Math.floor(Math.random()*10);
       $(".tile").eq(random).toggleClass('tile--active');
     };
   };
   
-  if ($(window).width() < 640) {
+  if ($(window).width() < 768) {
     $('.tile').addClass('tile--active');
   };
   

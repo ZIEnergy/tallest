@@ -62,9 +62,16 @@
     &--skills {
       padding: 20px 10px;
       display: flex;
+      flex-flow: column nowrap;
       justify-content: center;
       align-items: center;
-      flex-flow: row wrap;
+    }
+  }
+  &__skills-row {
+    display: flex;
+    justify-content: center;
+    &:nth-child(n+2) {
+      margin-top: 5px;
     }
   }
   &__skill-item {
@@ -197,11 +204,12 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .wrapper {
     justify-content: center;
     align-items: flex-start;
-    padding-top: 20px;
+    padding: 20px 0;
+    height: auto;
   }
   .tile {
     width: 48%;
@@ -223,11 +231,14 @@
     &__back--contacts {
       padding: 20px 0;
     }
+    &__back--skills {
+      padding: 10px;
+    }
   }
   .open-button {
     display: none;
   }
   .link-email {
-    font-size: 11px;
+    font-size: 10px;
   }
 }

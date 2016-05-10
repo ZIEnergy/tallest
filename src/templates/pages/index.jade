@@ -33,15 +33,19 @@ html(lang="ru")
         .tile.tile--active 
           .tile__flipper
             .tile__front skills
-            .tile__back.tile__back--skills 
-              span.tile__skill-item HTML5
-              span.tile__skill-item CSS3
-              span.tile__skill-item jQuery
-              span.tile__skill-item Jade
-              span.tile__skill-item Less
-              span.tile__skill-item BEM
-              span.tile__skill-item Gulp
-              span.tile__skill-item Git
+            .tile__back.tile__back--skills
+              .tile__skills-row
+                span.tile__skill-item HTML5
+                span.tile__skill-item CSS3
+              .tile__skills-row
+                span.tile__skill-item jQuery
+                span.tile__skill-item Jade
+              .tile__skills-row
+                span.tile__skill-item Less
+                span.tile__skill-item BEM
+              .tile__skills-row
+                span.tile__skill-item Gulp
+                span.tile__skill-item Git
         +work_item('Topnomer', 'img/works-topnomer.png', 'pages/topnomer/desktop/main.html')
         +work_item('Dinvio', 'img/works-dinvio.png', 'pages/dinvio')
         +work_item('Vyatka region', 'img/works-vyatka.png', 'pages/vyatka')
